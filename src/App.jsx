@@ -17,10 +17,10 @@ import { Link, Route, Routes } from 'react-router-dom';
       <h3 class="text-3xl font-bold">Landoo</h3>
       <div class="md:static absolute  md:min-h-fit min-h-[40vh] top-[-100%] left-0 md:w-auto w-full  flex items-center px-5">
       <ul class='flex md:flex-row flex-col md:items-center  md:gap-[4vw]  space-x-2 text-lg'>
-      <li class='list-none hover:underline hover:underline-offset-8'><Link to={'/'}>Home</Link></li>
+      <li class='list-none hover:underline hover:underline-offset-8'>Home</li>
       <li class='list-none hover:underline hover:underline-offset-8'>About Us</li>
       <li class='list-none hover:underline hover:underline-offset-8'>Contact Us</li>
-      <li class='list-none hover:underline hover:underline-offset-8'><Link to={'/Products'}>Products</Link></li>
+      <li class='list-none hover:underline hover:underline-offset-8'><Link to={'/products'}>Products</Link></li>
       </ul>
       </div>
       <div class="px-5 font-bold md:space-x-4  items-center">
@@ -48,7 +48,7 @@ import { Link, Route, Routes } from 'react-router-dom';
       </div>
        <Routes>
         <Route path="/products" element={<ProductList/>}></Route>
-        <Route path="/" element={<App/>}></Route>
+       
        </Routes>
        <div class="bg-black w-[100%] relative bottom-0 h-12 flex justify-center items-center">
          <p class="text-gray-300">@copyright
